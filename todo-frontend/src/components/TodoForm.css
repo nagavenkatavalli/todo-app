@@ -1,0 +1,72 @@
+.todo-form {
+    background: var(--blue-50);
+    border: 0.5px solid var(--blue-100);
+    border-radius: var(--radius-lg);
+    padding: 1.25rem;
+  }
+  
+  .todo-form h2 {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--blue-600);
+    margin-bottom: 12px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .form-row input,
+  .form-row textarea,
+  .form-row select {
+    padding: 9px 12px;
+    border-radius: var(--radius-md);
+    border: 0.5px solid var(--blue-200);
+    background: #fff;
+    color: var(--blue-800);
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  
+  .form-row input:focus,
+  .form-row textarea:focus {
+    border-color: var(--blue-400);
+  }
+  
+  .form-row input {
+    flex: 1;
+  }
+  
+  .form-row textarea {
+    flex: 1;
+    resize: none;
+    height: 38px;
+  }
+  
+  .form-row select {
+    color: var(--blue-600);
+  }
+  
+  .add-btn {
+    width: 100%;
+    padding: 10px;
+    border-radius: var(--radius-md);
+    border: none;
+    background: var(--blue-600);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.2s;
+  }
+  
+  .add-btn:hover {
+    background: var(--blue-800);
+  }
+  
+  .add-btn:disabled {
+    background: var(--blue-200);
+    cursor: not-allowed;
+  }

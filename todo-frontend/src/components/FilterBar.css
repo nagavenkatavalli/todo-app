@@ -1,0 +1,34 @@
+.filter-bar {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  
+  .filter-btn {
+    padding: 6px 16px;
+    border-radius: var(--radius-full);
+    border: 0.5px solid var(--blue-200);
+    background: #fff;
+    color: var(--blue-600);
+    font-size: 13px;
+    transition: all 0.15s;
+  }
+  
+  .filter-btn:hover:not(.active) {
+    background: var(--blue-50);
+    border-color: var(--blue-400);
+  }
+  
+  .filter-btn.active {
+    background: var(--blue-600);
+    color: #fff;
+    border-color: var(--blue-600);
+    font-weight: 600;
+  }
+  
+  .filter-btn.active-priority {
+    background: var(--blue-50);
+    color: var(--blue-800);
+    border-color: var(--blue-400);
+    font-weight: 600;
+  }

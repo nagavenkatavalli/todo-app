@@ -1,0 +1,24 @@
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .section-label {
+    font-size: 11px;
+    color: var(--blue-600);
+    font-weight: 600;
+    margin: 1rem 0 0.5rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  
+  .empty {
+    text-align: center;
+    padding: 2rem;
+    color: var(--blue-200);
+    font-size: 14px;
+    background: #fff;
+    border-radius: var(--radius-lg);
+    border: 0.5px solid var(--blue-100);
+  }

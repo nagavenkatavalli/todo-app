@@ -1,0 +1,222 @@
+.todo-card {
+    background: #fff;
+    border: 0.5px solid var(--blue-100);
+    border-radius: var(--radius-lg);
+    padding: 14px 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    border-left: 3px solid var(--blue-400);
+    transition: box-shadow 0.2s;
+  }
+  
+  .todo-card:hover {
+    box-shadow: var(--shadow-sm);
+  }
+  
+  .todo-card.done {
+    border-left-color: var(--green-600);
+    opacity: 0.6;
+  }.icon-btn.edit:hover {
+    background: var(--blue-100);
+    color: var(--blue-800);
+    border-color: var(--blue-200);
+  }
+  
+  .todo-card.editing {
+    border-left-color: var(--blue-600);
+    flex-direction: column;
+  }
+  
+  .edit-input,
+  .edit-textarea,
+  .edit-select {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: var(--radius-md);
+    border: 0.5px solid var(--blue-200);
+    background: #fff;
+    color: var(--blue-800);
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+    margin-bottom: 8px;
+  }
+  
+  .edit-input:focus,
+  .edit-textarea:focus {
+    border-color: var(--blue-400);
+  }
+  
+  .edit-textarea {
+    resize: none;
+    height: 60px;
+  }
+  
+  .edit-select {
+    color: var(--blue-600);
+  }
+  
+  .edit-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 4px;
+  }
+  
+  .save-btn {
+    flex: 1;
+    padding: 8px;
+    border-radius: var(--radius-md);
+    border: none;
+    background: var(--blue-600);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    transition: background 0.2s;
+  }
+  
+  .save-btn:hover {
+    background: var(--blue-800);
+  }
+  
+  .cancel-btn {
+    flex: 1;
+    padding: 8px;
+    border-radius: var(--radius-md);
+    border: 0.5px solid var(--blue-200);
+    background: #fff;
+    color: var(--blue-600);
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.2s;
+  }
+  
+  .cancel-btn:hover {
+    background: var(--blue-50);
+  }
+  
+  .todo-check {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1.5px solid var(--blue-200);
+    flex-shrink: 0;
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .todo-check:hover {
+    border-color: var(--green-600);
+  }
+  
+  .todo-check.checked {
+    background: var(--green-600);
+    border-color: var(--green-600);
+  }
+  
+  .todo-check.checked::after {
+    content: '';
+    width: 10px;
+    height: 6px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(-45deg) translateY(-1px);
+    display: block;
+  }
+  
+  .todo-body {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .todo-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--blue-800);
+    margin-bottom: 3px;
+  }
+  
+  .todo-card.done .todo-title {
+    text-decoration: line-through;
+    color: var(--gray-400);
+  }
+  
+  .todo-desc {
+    font-size: 13px;
+    color: var(--blue-400);
+    margin-bottom: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .todo-card.done .todo-desc {
+    color: var(--gray-100);
+  }
+  
+  .todo-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .badge {
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+  }
+  
+  .badge-HIGH {
+    background: var(--red-50);
+    color: var(--red-600);
+  }
+  
+  .badge-MEDIUM {
+    background: var(--amber-50);
+    color: var(--amber-600);
+  }
+  
+  .badge-LOW {
+    background: var(--green-50);
+    color: var(--green-800);
+  }
+  
+  .todo-date {
+    font-size: 11px;
+    color: var(--blue-200);
+  }
+  
+  .todo-actions {
+    display: flex;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+  
+  .icon-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: var(--radius-md);
+    border: 0.5px solid var(--blue-100);
+    background: var(--blue-50);
+    color: var(--blue-600);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s;
+  }
+  
+  .icon-btn:hover {
+    background: var(--blue-100);
+  }
+  
+  .icon-btn.del:hover {
+    background: var(--red-50);
+    color: var(--red-600);
+    border-color: var(--red-100);
+  }
