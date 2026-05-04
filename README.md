@@ -1,4 +1,4 @@
-# Todo App — Spring Boot + React + PostgreSQL
+# Todo App — Spring Boot + React + PostgreSQL + Junit
 
 A full-stack todo application with priority levels, live statistics, and filtering.
 Built with Spring Boot for the backend, React for the frontend, and PostgreSQL as the database.
@@ -26,6 +26,7 @@ Built with Spring Boot for the backend, React for the frontend, and PostgreSQL a
 - Spring Web
 - PostgreSQL
 - Maven
+- JUnit 5 and Mockito — for unit and integration testing
 - SpringDoc OpenAPI — Swagger UI available at `/swagger-ui.html`
 
 ### Frontend
@@ -41,7 +42,7 @@ Built with Spring Boot for the backend, React for the frontend, and PostgreSQL a
 ```
 todo
 ├── todo-backend\          — Spring Boot backend
-│   ├── src\main\java\com\todo\todo_api\
+│   ├── src\main\java\com\todo\
 │   │   ├── controller\
 │   │   ├── service\
 │   │   ├── repository\
@@ -238,7 +239,7 @@ docker-compose down
 
 ## Running Tests
 
-Tests are located in `src/test/java/com/todo/todo_api/`.
+Tests are located in `src/test/java/com/todo/`.
 
 To run all tests in IntelliJ, right-click the test folder and select "Run All Tests".
 
