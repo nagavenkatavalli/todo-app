@@ -1,10 +1,10 @@
-package com.todo.todo_api.service;
+package com.todo.service;
 
-import com.todo.todo_api.dto.TodoRequest;
-import com.todo.todo_api.dto.TodoResponse;
-import com.todo.todo_api.exception.ResourceNotFoundException;
-import com.todo.todo_api.model.Todo;
-import com.todo.todo_api.repository.TodoRepository;
+import com.todo.dto.TodoRequest;
+import com.todo.dto.TodoResponse;
+import com.todo.exception.ResourceNotFoundException;
+import com.todo.model.Todo;
+import com.todo.repository.TodoRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

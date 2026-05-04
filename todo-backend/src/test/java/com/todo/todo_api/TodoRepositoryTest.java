@@ -1,7 +1,7 @@
 package com.todo.todo_api;
 
-import com.todo.todo_api.model.Todo;
-import com.todo.todo_api.repository.TodoRepository;
+import com.todo.model.Todo;
+import com.todo.repository.TodoRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

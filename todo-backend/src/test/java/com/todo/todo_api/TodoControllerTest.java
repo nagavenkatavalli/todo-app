@@ -1,11 +1,11 @@
 package com.todo.todo_api;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.todo.todo_api.dto.TodoRequest;
-import com.todo.todo_api.dto.TodoResponse;
-import com.todo.todo_api.exception.ResourceNotFoundException;
-import com.todo.todo_api.model.Todo;
-import com.todo.todo_api.service.TodoService;
+import com.todo.dto.TodoRequest;
+import com.todo.dto.TodoResponse;
+import com.todo.exception.ResourceNotFoundException;
+import com.todo.model.Todo;
+import com.todo.service.TodoService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

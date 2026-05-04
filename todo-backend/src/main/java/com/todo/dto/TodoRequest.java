@@ -1,8 +1,8 @@
-package com.todo.todo_api.dto;
+package com.todo.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
-import com.todo.todo_api.model.Todo;
+import com.todo.model.Todo;
 
 @Data
 public class TodoRequest {

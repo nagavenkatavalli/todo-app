@@ -1,4 +1,4 @@
-package com.todo.todo_api.model;
+package com.todo.model;
 
 import jakarta.persistence.*;
 import lombok.*;

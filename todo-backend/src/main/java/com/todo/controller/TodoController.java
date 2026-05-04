@@ -1,8 +1,8 @@
-package com.todo.todo_api.controller;
+package com.todo.controller;
 
-import com.todo.todo_api.dto.TodoRequest;
-import com.todo.todo_api.dto.TodoResponse;
-import com.todo.todo_api.service.TodoService;
+import com.todo.dto.TodoRequest;
+import com.todo.dto.TodoResponse;
+import com.todo.service.TodoService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

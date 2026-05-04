@@ -1,6 +1,6 @@
-package com.todo.todo_api.dto;
+package com.todo.dto;
 
-import com.todo.todo_api.model.Todo;
+import com.todo.model.Todo;
 import lombok.Data;
 import lombok.Builder;
 
